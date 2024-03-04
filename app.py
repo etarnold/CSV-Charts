@@ -1,4 +1,5 @@
-import os
+#!/usr/bin/env python
+
 import base64
 import io
 from dash import Dash, dcc, html, Input, Output
@@ -110,4 +111,4 @@ def update_graph(uploaded_file_contents, uploaded_file_name):
 
 if __name__ == '__main__':
     app.layout = layout
-    app.run_server(debug=True)
+    app.run_server(debug=False)
